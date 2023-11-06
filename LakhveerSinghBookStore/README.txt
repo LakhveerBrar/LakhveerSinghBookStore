@@ -57,3 +57,8 @@ Change your target project to the migrations project by using the Package Manage
 Beacaue there are named file LakhveerSinghBookStore and we have to change it to in LakhveerSinghBooks.DataAccess
 Now we are adding the migration file name:
 (20231106221347_AddDefaultIdentityMigration)
+
+
+
+
+add-migration AddCategoryToDb
