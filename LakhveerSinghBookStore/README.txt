@@ -39,10 +39,21 @@ after that The new Projects build
 Now i moving the folders
 But when i working with that i found some problems wit my project that i could,t Handel
 
+2023-11-06
+I strated the project again and using all the steps 
+
+
+started Assignment part 2.0
+First build the ALL NEW NEccessary cmads like build the application
+Next step i review the urgent steps in appsetting.json 
+In the appsetting we change the databse to our name like my file name is LakhveerSinghBookStore
+then we update the migration and working with the NuGet package Manager Console and using the new commands
+(add-migration AddDefaultIdentityMigration)
+And now there are some problems here
 
 Your target project 'LakhveerSinghBookStore' doesn't match your migrations assembly 'LakhveerSinghBooks.DataAccess'. Either change your target project or change your migrations assembly.
 Change your migrations assembly by using DbContextOptionsBuilder. E.g. options.UseSqlServer(connection, b => b.MigrationsAssembly("LakhveerSinghBookStore")). By default, the migrations assembly is the assembly containing the DbContext.
 Change your target project to the migrations project by using the Package Manager Console's Default project drop-down list, or by executing "dotnet ef" from the directory containing the migrations project.
-
-
-20231106221347_AddDefaultIdentityMigration
+Beacaue there are named file LakhveerSinghBookStore and we have to change it to in LakhveerSinghBooks.DataAccess
+Now we are adding the migration file name:
+(20231106221347_AddDefaultIdentityMigration)
