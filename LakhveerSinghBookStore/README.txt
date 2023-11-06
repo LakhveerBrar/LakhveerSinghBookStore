@@ -62,3 +62,6 @@ Now we are adding the migration file name:
 
 
 add-migration AddCategoryToDb
+
+
+The name 'AddCategoryToDb' is used by an existing migration.
