@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace LakhveerSinghBookStore.Controllers
 {
+    [Area("Customers")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
