@@ -15,8 +15,4 @@
     <ProjectReference Include="..\LakhveerSinghBooks.Utility\LakhveerSinghBooks.Utility.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repository\IRepository\" />
-  </ItemGroup>
-
 </Project>
