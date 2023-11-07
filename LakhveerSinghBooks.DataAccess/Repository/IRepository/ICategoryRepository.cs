@@ -1,10 +1,12 @@
-﻿using System;
+﻿using LakhveerSinghBooks.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace LakhveerSinghBooks.DataAccess.Repository.IRepository
 {
-    interface ICategoryRepository
+    public interface ICategoryRepository : IRepository<Category>
     {
+        void Update(Category category);
     }
 }
