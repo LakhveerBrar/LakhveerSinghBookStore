@@ -1,4 +1,6 @@
-﻿using Dapper;
+﻿using LakhveerSinghBooks.DataAccess.Repository.IRepository;
+using LakhveerSinghBookStore.DataAccess.Data;
+using Dapper;
 using System;
 using System.Collections.Generic;
 using System.Text;
