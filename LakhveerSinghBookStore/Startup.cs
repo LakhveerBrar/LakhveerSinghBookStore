@@ -1,3 +1,5 @@
+using LakhveerSinghBooks.DataAccess.Repository;
+using LakhveerSinghBooks.DataAccess.Repository.IRepository;
 using LakhveerSinghBookStore.DataAccess.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -28,6 +30,7 @@ namespace LakhveerSinghBookStore
 
             services.AddDefaultIdentity<IdentityUser>()                  //options => options.SignIn.RequireConfirmedAccount = true
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
         }
 
