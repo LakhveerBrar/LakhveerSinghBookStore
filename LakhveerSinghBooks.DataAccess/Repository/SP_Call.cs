@@ -2,6 +2,7 @@
 using LakhveerSinghBooks.DataAccess.Repository.IRepository;
 using LakhveerSinghBookStore.DataAccess.Data;
 using System;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Text;
 
@@ -9,6 +10,15 @@ namespace LakhveerSinghBooks.DataAccess.Repository
 {
     public class SP_Call : ISP_Call
     {
+
+        private readonly ApplicationDbContext _db;
+        private static string ConnectionString = "";
+        public SP_Call(ApplicationDbContext db)
+        {
+            _db = db;
+            ConnectionString = db.Database.GetDbConnection().ConnectionString;
+                
+        }
         public void Dispose()
         {
             throw new NotImplementedException();
