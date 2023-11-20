@@ -1,5 +1,4 @@
-﻿using LakhveerSinghBooks.DataAccess.Repository.IRepository;
-using LakhveerSinghBookStore.DataAccess.Data;
+﻿
 using Dapper;
 using System;
 using System.Collections.Generic;
@@ -7,7 +6,7 @@ using System.Text;
 
 namespace LakhveerSinghBooks.DataAccess.Repository.IRepository
 {
-    interface ISP_Call : IDisposable
+   public interface ISP_Call : IDisposable
     {
         T Single<T>(string procedurename, DynamicParameters param = null);
         void Execute(string procedurename, DynamicParameters param = null);
